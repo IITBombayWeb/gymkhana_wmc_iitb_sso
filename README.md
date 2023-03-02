@@ -1,7 +1,7 @@
 # gymkhana_wmc_iitb_sso
 # Integrating Django with Apache
 
-Here are the steps to integrate Django with Apache:
+Here are the steps to integrate Django SSO app with Apache:
 
 1. Copy the `ldap-oauth2` folder to the path `/var/www`.
 
