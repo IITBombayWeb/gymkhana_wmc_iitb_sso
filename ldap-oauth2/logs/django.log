@@ -1,0 +1,488 @@
+INFO [2022-10-10 10:03:26,908] [django.utils.autoreload] [autoreload] [Process:82636] [Thread:140283783198528] Watching for file changes with StatReloader
+INFO [2022-10-10 10:04:07,868] [django.utils.autoreload] [autoreload] [Process:82721] [Thread:140281683298112] Watching for file changes with StatReloader
+INFO [2022-10-10 10:05:18,373] [django.utils.autoreload] [autoreload] [Process:82931] [Thread:139954882176832] Watching for file changes with StatReloader
+INFO [2022-10-10 10:06:17,096] [django.utils.autoreload] [autoreload] [Process:83110] [Thread:139917309462336] Watching for file changes with StatReloader
+INFO [2022-10-10 10:06:45,318] [django.utils.autoreload] [autoreload] [Process:83192] [Thread:139778465331008] Watching for file changes with StatReloader
+INFO [2022-10-10 10:08:40,420] [django.utils.autoreload] [autoreload] [Process:83379] [Thread:140307512235840] Watching for file changes with StatReloader
+INFO [2022-10-17 09:48:06,700] [django.utils.autoreload] [autoreload] [Process:39844] [Thread:140209102571328] Watching for file changes with StatReloader
+INFO [2022-10-17 09:58:34,799] [django.utils.autoreload] [autoreload] [Process:41784] [Thread:140665563219776] Watching for file changes with StatReloader
+INFO [2022-10-17 11:18:31,864] [django.utils.autoreload] [autoreload] [Process:45308] [Thread:140364683532096] Watching for file changes with StatReloader
+INFO [2022-10-28 16:27:06,220] [django.utils.autoreload] [autoreload] [Process:5273] [Thread:139850626942784] Watching for file changes with StatReloader
+INFO [2022-10-28 16:31:11,963] [django.utils.autoreload] [autoreload] [Process:5325] [Thread:139735662499648] Watching for file changes with StatReloader
+INFO [2022-10-28 16:40:07,542] [django.utils.autoreload] [autoreload] [Process:5734] [Thread:140119157503808] Watching for file changes with StatReloader
+INFO [2022-10-28 16:42:08,760] [django.utils.autoreload] [autoreload] [Process:5765] [Thread:139914750482240] Watching for file changes with StatReloader
+INFO [2022-10-28 16:42:27,214] [django.utils.autoreload] [autoreload] [Process:5814] [Thread:140583061493568] Watching for file changes with StatReloader
+INFO [2022-10-28 16:42:50,634] [django.utils.autoreload] [autoreload] [Process:5820] [Thread:139961291528000] Watching for file changes with StatReloader
+INFO [2022-10-28 16:46:23,457] [django.utils.autoreload] [autoreload] [Process:5885] [Thread:140188340414272] Watching for file changes with StatReloader
+INFO [2022-10-28 16:46:57,173] [django.utils.autoreload] [autoreload] [Process:5983] [Thread:139815215425344] Watching for file changes with StatReloader
+INFO [2022-10-28 16:47:47,407] [django.utils.autoreload] [autoreload] [Process:6071] [Thread:139885547013952] Watching for file changes with StatReloader
+ERROR [2022-10-28 16:48:02,050] [django.request] [log] [Process:6071] [Thread:139885402912320] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/module_loading.py", line 20, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'django.contrib.staticfiles.storage' has no attribute 'CachedStaticFilesStorage'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 103, in url
+    return self.handle_simple(path)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/functional.py", line 246, in inner
+    self._setup()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 438, in _setup
+    self._wrapped = get_storage_class(settings.STATICFILES_STORAGE)()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/files/storage.py", line 373, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/module_loading.py", line 22, in import_string
+    raise ImportError('Module "%s" does not define a "%s" attribute/class' % (
+ImportError: Module "django.contrib.staticfiles.storage" does not define a "CachedStaticFilesStorage" attribute/class
+ERROR [2022-10-28 16:48:02,073] [django.server] [basehttp] [Process:6071] [Thread:139885402912320] "GET / HTTP/1.1" 500 155769
+WARNING [2022-10-28 16:48:02,266] [django.request] [log] [Process:6071] [Thread:139885402912320] Not Found: /favicon.ico
+WARNING [2022-10-28 16:48:02,267] [django.server] [basehttp] [Process:6071] [Thread:139885402912320] "GET /favicon.ico HTTP/1.1" 404 3231
+INFO [2022-10-28 16:57:05,048] [django.utils.autoreload] [autoreload] [Process:6523] [Thread:140518512179008] Watching for file changes with StatReloader
+ERROR [2022-10-28 16:58:07,441] [django.request] [log] [Process:6523] [Thread:140518370833984] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/module_loading.py", line 20, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'django.contrib.staticfiles.storage' has no attribute 'CachedStaticFilesStorage'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 103, in url
+    return self.handle_simple(path)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/functional.py", line 246, in inner
+    self._setup()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 438, in _setup
+    self._wrapped = get_storage_class(settings.STATICFILES_STORAGE)()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/files/storage.py", line 373, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/module_loading.py", line 22, in import_string
+    raise ImportError('Module "%s" does not define a "%s" attribute/class' % (
+ImportError: Module "django.contrib.staticfiles.storage" does not define a "CachedStaticFilesStorage" attribute/class
+ERROR [2022-10-28 16:58:07,466] [django.server] [basehttp] [Process:6523] [Thread:140518370833984] "GET / HTTP/1.1" 500 155769
+WARNING [2022-10-28 16:58:07,555] [django.request] [log] [Process:6523] [Thread:140518370833984] Not Found: /favicon.ico
+INFO [2022-10-28 16:59:14,815] [django.utils.autoreload] [autoreload] [Process:6546] [Thread:140220264675136] Watching for file changes with StatReloader
+ERROR [2022-10-28 16:59:21,827] [django.request] [log] [Process:6546] [Thread:140220190160448] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/module_loading.py", line 20, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'django.contrib.staticfiles.storage' has no attribute 'CachedStaticFilesStorage'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 103, in url
+    return self.handle_simple(path)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/functional.py", line 246, in inner
+    self._setup()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 438, in _setup
+    self._wrapped = get_storage_class(settings.STATICFILES_STORAGE)()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/files/storage.py", line 373, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/module_loading.py", line 22, in import_string
+    raise ImportError('Module "%s" does not define a "%s" attribute/class' % (
+ImportError: Module "django.contrib.staticfiles.storage" does not define a "CachedStaticFilesStorage" attribute/class
+ERROR [2022-10-28 16:59:21,849] [django.server] [basehttp] [Process:6546] [Thread:140220190160448] "GET / HTTP/1.1" 500 155769
+INFO [2022-10-28 17:06:46,781] [django.utils.autoreload] [autoreload] [Process:6546] [Thread:140220264675136] /home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/conf/global_settings.py changed, reloading.
+INFO [2022-10-28 17:06:47,588] [django.utils.autoreload] [autoreload] [Process:7157] [Thread:140331962554176] Watching for file changes with StatReloader
+INFO [2022-10-28 17:10:34,618] [django.utils.autoreload] [autoreload] [Process:7220] [Thread:139943541679936] Watching for file changes with StatReloader
+ERROR [2022-10-28 17:10:53,118] [django.request] [log] [Process:7220] [Thread:139943467284032] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/module_loading.py", line 20, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'django.contrib.staticfiles.storage' has no attribute 'CachedStaticFilesStorage'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 103, in url
+    return self.handle_simple(path)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/functional.py", line 246, in inner
+    self._setup()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 438, in _setup
+    self._wrapped = get_storage_class(settings.STATICFILES_STORAGE)()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/files/storage.py", line 373, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/module_loading.py", line 22, in import_string
+    raise ImportError('Module "%s" does not define a "%s" attribute/class' % (
+ImportError: Module "django.contrib.staticfiles.storage" does not define a "CachedStaticFilesStorage" attribute/class
+ERROR [2022-10-28 17:10:53,143] [django.server] [basehttp] [Process:7220] [Thread:139943467284032] "GET / HTTP/1.1" 500 155769
+ERROR [2022-10-28 17:10:55,860] [django.request] [log] [Process:7220] [Thread:139943467284032] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/module_loading.py", line 20, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'django.contrib.staticfiles.storage' has no attribute 'CachedStaticFilesStorage'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 103, in url
+    return self.handle_simple(path)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/functional.py", line 246, in inner
+    self._setup()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 438, in _setup
+    self._wrapped = get_storage_class(settings.STATICFILES_STORAGE)()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/files/storage.py", line 373, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/module_loading.py", line 22, in import_string
+    raise ImportError('Module "%s" does not define a "%s" attribute/class' % (
+ImportError: Module "django.contrib.staticfiles.storage" does not define a "CachedStaticFilesStorage" attribute/class
+ERROR [2022-10-28 17:10:55,880] [django.server] [basehttp] [Process:7220] [Thread:139943467284032] "GET / HTTP/1.1" 500 155769
+INFO [2022-10-28 17:13:08,352] [django.utils.autoreload] [autoreload] [Process:7220] [Thread:139943541679936] /home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/conf/global_settings.py changed, reloading.
+INFO [2022-10-28 17:13:09,175] [django.utils.autoreload] [autoreload] [Process:7296] [Thread:140079811426112] Watching for file changes with StatReloader
+ERROR [2022-10-28 17:13:19,289] [django.request] [log] [Process:7296] [Thread:140079737075264] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/module_loading.py", line 20, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'django.contrib.staticfiles.storage' has no attribute 'CachedStaticFilesStorage'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 103, in url
+    return self.handle_simple(path)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/functional.py", line 246, in inner
+    self._setup()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 438, in _setup
+    self._wrapped = get_storage_class(settings.STATICFILES_STORAGE)()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/files/storage.py", line 373, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/module_loading.py", line 22, in import_string
+    raise ImportError('Module "%s" does not define a "%s" attribute/class' % (
+ImportError: Module "django.contrib.staticfiles.storage" does not define a "CachedStaticFilesStorage" attribute/class
+ERROR [2022-10-28 17:13:19,312] [django.server] [basehttp] [Process:7296] [Thread:140079737075264] "GET / HTTP/1.1" 500 155769
+INFO [2022-10-28 23:11:27,140] [django.utils.autoreload] [autoreload] [Process:15626] [Thread:139719267551040] Watching for file changes with StatReloader
+WARNING [2022-10-28 23:11:37,073] [django.request] [log] [Process:15626] [Thread:139719193130560] Not Found: /playground/hello/
+WARNING [2022-10-28 23:11:37,074] [django.server] [basehttp] [Process:15626] [Thread:139719193130560] "GET /playground/hello/ HTTP/1.1" 404 3249
+ERROR [2022-10-28 23:11:41,495] [django.request] [log] [Process:15626] [Thread:139719193130560] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/module_loading.py", line 20, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'django.contrib.staticfiles.storage' has no attribute 'CachedStaticFilesStorage'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 103, in url
+    return self.handle_simple(path)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/templatetags/static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/functional.py", line 246, in inner
+    self._setup()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 438, in _setup
+    self._wrapped = get_storage_class(settings.STATICFILES_STORAGE)()
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/core/files/storage.py", line 373, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/shubhamvc/miniconda3/envs/django/lib/python3.9/site-packages/django/utils/module_loading.py", line 22, in import_string
+    raise ImportError('Module "%s" does not define a "%s" attribute/class' % (
+ImportError: Module "django.contrib.staticfiles.storage" does not define a "CachedStaticFilesStorage" attribute/class
+ERROR [2022-10-28 23:11:41,522] [django.server] [basehttp] [Process:15626] [Thread:139719193130560] "GET / HTTP/1.1" 500 155769
+INFO [2022-10-30 19:04:06,037] [django.utils.autoreload] [autoreload] [Process:28222] [Thread:140078466881344] Watching for file changes with StatReloader
+INFO [2022-10-30 19:04:41,967] [django.utils.autoreload] [autoreload] [Process:28226] [Thread:139998485509952] Watching for file changes with StatReloader
+INFO [2022-10-30 19:05:25,838] [django.utils.autoreload] [autoreload] [Process:28239] [Thread:140341235623744] Watching for file changes with StatReloader
+INFO [2022-10-30 19:06:53,794] [django.utils.autoreload] [autoreload] [Process:28268] [Thread:140660141418304] Watching for file changes with StatReloader
+INFO [2022-10-31 09:19:27,301] [django.utils.autoreload] [autoreload] [Process:38851] [Thread:140062513022784] Watching for file changes with StatReloader
+INFO [2022-11-05 01:50:20,390] [django.utils.autoreload] [autoreload] [Process:7710] [Thread:140422048999232] Watching for file changes with StatReloader
+INFO [2022-11-05 01:50:32,681] [django.utils.autoreload] [autoreload] [Process:7718] [Thread:140081477531456] Watching for file changes with StatReloader
+INFO [2022-11-05 01:52:00,829] [django.utils.autoreload] [autoreload] [Process:7718] [Thread:140081477531456] /home/shubhamvc/Work/projects/ta/sso/user_resource/forms.py changed, reloading.
+INFO [2022-11-05 01:52:01,710] [django.utils.autoreload] [autoreload] [Process:7763] [Thread:140225609127744] Watching for file changes with StatReloader
+INFO [2022-11-05 01:52:11,493] [django.utils.autoreload] [autoreload] [Process:7766] [Thread:140074658088768] Watching for file changes with StatReloader
+ERROR [2022-11-05 01:52:23,210] [django.server] [basehttp] [Process:7766] [Thread:140074515691072] "GET / HTTP/1.1" 500 59
+ERROR [2022-11-05 01:52:23,600] [django.server] [basehttp] [Process:7766] [Thread:140074515691072] "GET /favicon.ico HTTP/1.1" 500 59
+INFO [2022-11-07 10:02:04,798] [django.utils.autoreload] [autoreload] [Process:1044023] [Thread:140483466032960] Watching for file changes with StatReloader
+ERROR [2022-11-07 10:02:22,384] [django.server] [basehttp] [Process:1044023] [Thread:140483391125056] "GET / HTTP/1.1" 500 59
+ERROR [2022-11-07 10:02:22,555] [django.server] [basehttp] [Process:1044023] [Thread:140483391125056] "GET /favicon.ico HTTP/1.1" 500 59
+INFO [2022-11-07 10:07:14,296] [django.utils.autoreload] [autoreload] [Process:1046735] [Thread:140522015631168] Watching for file changes with StatReloader
+ERROR [2022-11-07 10:07:32,122] [django.server] [basehttp] [Process:1046735] [Thread:140521867572800] "GET / HTTP/1.1" 500 59
+INFO [2022-11-07 10:25:19,174] [django.utils.autoreload] [autoreload] [Process:1052861] [Thread:139890581186368] Watching for file changes with StatReloader
+ERROR [2022-11-07 10:25:31,270] [django.server] [basehttp] [Process:1052861] [Thread:139890436077120] "GET / HTTP/1.1" 500 59
+ERROR [2022-11-07 10:25:46,967] [django.server] [basehttp] [Process:1052861] [Thread:139890436077120] "GET / HTTP/1.1" 500 59
+ERROR [2022-11-07 10:25:47,114] [django.server] [basehttp] [Process:1052861] [Thread:139890427684416] "GET /favicon.ico HTTP/1.1" 500 59
+INFO [2022-11-07 10:25:51,845] [django.utils.autoreload] [autoreload] [Process:1052957] [Thread:140015276676928] Watching for file changes with StatReloader
+ERROR [2022-11-07 10:25:55,196] [django.server] [basehttp] [Process:1052957] [Thread:140015128540736] "GET / HTTP/1.1" 500 59
+ERROR [2022-11-07 10:25:55,299] [django.server] [basehttp] [Process:1052957] [Thread:140015120148032] "GET /favicon.ico HTTP/1.1" 500 59
+INFO [2022-11-07 11:18:38,157] [django.utils.autoreload] [autoreload] [Process:1054431] [Thread:140196207683392] Watching for file changes with StatReloader
+INFO [2022-11-07 11:18:49,909] [django.server] [basehttp] [Process:1054431] [Thread:140196132681280] "GET / HTTP/1.1" 200 3727
+INFO [2022-11-07 11:18:49,953] [django.server] [basehttp] [Process:1054431] [Thread:140196054038080] "GET /static/sso/css/root.css HTTP/1.1" 200 1845
+INFO [2022-11-07 11:18:49,954] [django.server] [basehttp] [Process:1054431] [Thread:140196020467264] "GET /static/sso/js/root.js HTTP/1.1" 200 499
+INFO [2022-11-07 11:18:49,954] [django.server] [basehttp] [Process:1054431] [Thread:140196037252672] "GET /static/sso/js/js.cookie.js HTTP/1.1" 200 3242
+INFO [2022-11-07 11:18:49,954] [django.server] [basehttp] [Process:1054431] [Thread:140196028859968] "GET /static/sso/js/bootstrap.min.js HTTP/1.1" 200 35951
+INFO [2022-11-07 11:18:49,954] [django.server] [basehttp] [Process:1054431] [Thread:140196045645376] "GET /static/sso/js/jquery.min.js HTTP/1.1" 200 84320
+INFO [2022-11-07 11:18:49,955] [django.server] [basehttp] [Process:1054431] [Thread:140196132681280] "GET /static/sso/css/bootstrap.min.css HTTP/1.1" 200 117305
+INFO [2022-11-07 12:29:41,949] [django.utils.autoreload] [autoreload] [Process:1054950] [Thread:140225266820928] Watching for file changes with StatReloader
+INFO [2022-11-07 12:29:44,426] [django.server] [basehttp] [Process:1054950] [Thread:140225191867968] "GET /user/ HTTP/1.1" 302 0
+INFO [2022-11-07 12:29:44,437] [django.server] [basehttp] [Process:1054950] [Thread:140225191867968] "GET /account/login/?next=/user/ HTTP/1.1" 200 4541
+INFO [2022-11-07 12:29:47,799] [django.server] [basehttp] [Process:1054950] [Thread:140225191867968] "GET /doc/ HTTP/1.1" 200 37045
+INFO [2022-11-07 12:29:47,823] [django.server] [basehttp] [Process:1054950] [Thread:140225191867968] "GET /static/sso/css/doc.css HTTP/1.1" 200 29
+INFO [2022-11-07 12:29:47,823] [django.server] [basehttp] [Process:1054950] [Thread:140225112176192] "GET /static/sso/js/anchor.min.js HTTP/1.1" 200 4987
+INFO [2022-11-07 12:29:47,824] [django.server] [basehttp] [Process:1054950] [Thread:140225103783488] "GET /static/widget/js/login.js HTTP/1.1" 200 6288
+INFO [2022-11-07 12:29:47,824] [django.server] [basehttp] [Process:1054950] [Thread:140225095390784] "GET /static/sso/js/doc.js HTTP/1.1" 200 1533
+INFO [2022-11-24 11:07:58,071] [django.utils.autoreload] [autoreload] [Process:270636] [Thread:140448021542720] Watching for file changes with StatReloader
+INFO [2022-11-24 11:08:14,058] [django.server] [basehttp] [Process:270636] [Thread:140447946634816] "GET / HTTP/1.1" 200 3727
+INFO [2022-11-24 11:08:14,104] [django.server] [basehttp] [Process:270636] [Thread:140447712278080] "GET /static/sso/js/js.cookie.js HTTP/1.1" 200 3242
+INFO [2022-11-24 11:08:14,105] [django.server] [basehttp] [Process:270636] [Thread:140447695492672] "GET /static/sso/js/root.js HTTP/1.1" 200 499
+INFO [2022-11-24 11:08:14,105] [django.server] [basehttp] [Process:270636] [Thread:140447937717824] "GET /static/sso/css/root.css HTTP/1.1" 200 1845
+INFO [2022-11-24 11:08:14,105] [django.server] [basehttp] [Process:270636] [Thread:140447946634816] "GET /static/sso/css/bootstrap.min.css HTTP/1.1" 200 117305
+INFO [2022-11-24 11:08:14,106] [django.server] [basehttp] [Process:270636] [Thread:140447703885376] "GET /static/sso/js/bootstrap.min.js HTTP/1.1" 200 35951
+INFO [2022-11-24 11:08:14,106] [django.server] [basehttp] [Process:270636] [Thread:140447929062976] "GET /static/sso/js/jquery.min.js HTTP/1.1" 200 84320
+WARNING [2022-11-24 11:08:14,180] [django.request] [log] [Process:270636] [Thread:140447929062976] Not Found: /favicon.ico
+WARNING [2022-11-24 11:08:14,180] [django.server] [basehttp] [Process:270636] [Thread:140447929062976] "GET /favicon.ico HTTP/1.1" 404 3231
+INFO [2022-11-24 11:08:16,984] [django.server] [basehttp] [Process:270636] [Thread:140447946634816] "GET /user/ HTTP/1.1" 302 0
+INFO [2022-11-24 11:08:16,990] [django.server] [basehttp] [Process:270636] [Thread:140447946634816] "GET /account/login/?next=/user/ HTTP/1.1" 200 4541
+INFO [2022-11-24 11:08:36,223] [django.server] [basehttp] [Process:270636] [Thread:140447946634816] "POST /account/login/?next=/user/ HTTP/1.1" 302 0
+INFO [2022-11-24 11:08:36,225] [django.server] [basehttp] [Process:270636] [Thread:140447946634816] "GET /user/ HTTP/1.1" 302 0
+INFO [2022-11-24 11:08:36,275] [django.server] [basehttp] [Process:270636] [Thread:140447946634816] "GET /account/login/?next=/user/ HTTP/1.1" 200 4541
+WARNING [2022-11-24 11:48:05,732] [django.request] [log] [Process:270636] [Thread:140447946634816] Not Found: /profiles/doc/
+WARNING [2022-11-24 11:48:05,733] [django.server] [basehttp] [Process:270636] [Thread:140447946634816] "GET /profiles/doc/ HTTP/1.1" 404 3237
+INFO [2022-11-24 12:20:59,986] [django.server] [basehttp] [Process:270636] [Thread:140447946634816] "GET / HTTP/1.1" 200 3727
+INFO [2022-11-24 12:21:00,020] [django.server] [basehttp] [Process:270636] [Thread:140447712278080] "GET /static/sso/css/root.css HTTP/1.1" 200 1845
+INFO [2022-11-24 12:21:00,022] [django.server] [basehttp] [Process:270636] [Thread:140447946634816] "GET /static/sso/js/js.cookie.js HTTP/1.1" 200 3242
+INFO [2022-11-24 12:21:00,023] [django.server] [basehttp] [Process:270636] [Thread:140447703885376] "GET /static/sso/js/root.js HTTP/1.1" 200 499
+INFO [2022-11-24 12:21:00,024] [django.server] [basehttp] [Process:270636] [Thread:140447929062976] "GET /static/sso/js/bootstrap.min.js HTTP/1.1" 200 35951
+INFO [2022-11-24 12:21:00,024] [django.server] [basehttp] [Process:270636] [Thread:140447937717824] "GET /static/sso/js/jquery.min.js HTTP/1.1" 200 84320
+WARNING [2022-11-24 12:21:00,076] [django.request] [log] [Process:270636] [Thread:140447929062976] Not Found: /favicon.ico
+INFO [2022-11-24 12:21:02,161] [django.server] [basehttp] [Process:270636] [Thread:140447946634816] "GET /user/ HTTP/1.1" 302 0
+INFO [2022-11-24 12:21:02,170] [django.server] [basehttp] [Process:270636] [Thread:140447946634816] "GET /account/login/?next=/user/ HTTP/1.1" 200 4541
+WARNING [2022-11-24 12:21:02,254] [django.request] [log] [Process:270636] [Thread:140447946634816] Not Found: /favicon.ico
+INFO [2022-12-01 13:59:45,535] [django.utils.autoreload] [autoreload] [Process:70386] [Thread:140326451447616] Watching for file changes with StatReloader
+INFO [2022-12-02 14:11:18,883] [django.utils.autoreload] [autoreload] [Process:113615] [Thread:139818994083648] Watching for file changes with StatReloader
+INFO [2022-12-02 14:11:32,389] [django.server] [basehttp] [Process:113615] [Thread:139818918999616] "GET / HTTP/1.1" 200 3727
+INFO [2022-12-02 14:11:32,415] [django.server] [basehttp] [Process:113615] [Thread:139818835113536] "GET /static/sso/css/root.css HTTP/1.1" 200 1845
+INFO [2022-12-02 14:11:32,416] [django.server] [basehttp] [Process:113615] [Thread:139818818328128] "GET /static/sso/js/js.cookie.js HTTP/1.1" 200 3242
+INFO [2022-12-02 14:11:32,416] [django.server] [basehttp] [Process:113615] [Thread:139818918999616] "GET /static/sso/css/bootstrap.min.css HTTP/1.1" 200 117305
+INFO [2022-12-02 14:11:32,416] [django.server] [basehttp] [Process:113615] [Thread:139818801542720] "GET /static/sso/js/root.js HTTP/1.1" 200 499
+INFO [2022-12-02 14:11:32,417] [django.server] [basehttp] [Process:113615] [Thread:139818809935424] "GET /static/sso/js/bootstrap.min.js HTTP/1.1" 200 35951
+INFO [2022-12-02 14:11:32,417] [django.server] [basehttp] [Process:113615] [Thread:139818826720832] "GET /static/sso/js/jquery.min.js HTTP/1.1" 200 84320
+WARNING [2022-12-02 14:11:32,510] [django.request] [log] [Process:113615] [Thread:139818826720832] Not Found: /favicon.ico
+WARNING [2022-12-02 14:11:32,510] [django.server] [basehttp] [Process:113615] [Thread:139818826720832] "GET /favicon.ico HTTP/1.1" 404 3231
+INFO [2022-12-02 14:11:40,507] [django.server] [basehttp] [Process:113615] [Thread:139818918999616] "GET /user/ HTTP/1.1" 302 0
+INFO [2022-12-02 14:11:40,521] [django.server] [basehttp] [Process:113615] [Thread:139818918999616] "GET /account/login/?next=/user/ HTTP/1.1" 200 4541
+INFO [2022-12-02 15:12:19,312] [django.utils.autoreload] [autoreload] [Process:122664] [Thread:139936206354240] Watching for file changes with StatReloader
+INFO [2022-12-02 15:12:40,889] [django.server] [basehttp] [Process:122664] [Thread:139936064075328] "GET / HTTP/1.1" 200 3727
+INFO [2022-12-02 15:51:18,188] [django.utils.autoreload] [autoreload] [Process:127352] [Thread:139697612842816] Watching for file changes with StatReloader
+INFO [2022-12-02 15:51:30,826] [django.server] [basehttp] [Process:127352] [Thread:139697537939008] "GET / HTTP/1.1" 200 3727
+WARNING [2022-12-02 15:51:36,597] [django.request] [log] [Process:127352] [Thread:139697537939008] Not Found: /index.html
+WARNING [2022-12-02 15:51:36,598] [django.server] [basehttp] [Process:127352] [Thread:139697537939008] "GET /index.html HTTP/1.1" 404 3228
+INFO [2022-12-02 15:51:43,738] [django.server] [basehttp] [Process:127352] [Thread:139697537939008] "GET / HTTP/1.1" 200 3727
+WARNING [2022-12-02 15:51:52,684] [django.request] [log] [Process:127352] [Thread:139697537939008] Not Found: /profiles
+WARNING [2022-12-02 15:51:52,685] [django.server] [basehttp] [Process:127352] [Thread:139697537939008] "GET /profiles HTTP/1.1" 404 3222
+INFO [2022-12-02 15:51:58,403] [django.server] [basehttp] [Process:127352] [Thread:139697537939008] "GET /user/ HTTP/1.1" 302 0
+INFO [2022-12-02 15:51:58,415] [django.server] [basehttp] [Process:127352] [Thread:139697537939008] "GET /account/login/?next=/user/ HTTP/1.1" 200 4541
+WARNING [2022-12-02 15:52:00,573] [django.request] [log] [Process:127352] [Thread:139697537939008] Not Found: /favicon.ico
+INFO [2022-12-02 15:57:54,181] [django.utils.autoreload] [autoreload] [Process:127513] [Thread:140446780184384] Watching for file changes with StatReloader
+WARNING [2022-12-05 00:31:44,441] [django.request] [log] [Process:210333] [Thread:139889446602624] Not Found: /profiles/static
+INFO [2022-12-05 00:56:42,818] [django.utils.autoreload] [autoreload] [Process:212540] [Thread:140395236409792] Watching for file changes with StatReloader
+INFO [2022-12-05 00:56:55,523] [django.server] [basehttp] [Process:212540] [Thread:140395093685824] "GET / HTTP/1.1" 200 3727
+WARNING [2022-12-05 11:24:48,509] [django.request] [log] [Process:234858] [Thread:140300265174912] Not Found: /sso/css/bootstrap.min.css
+WARNING [2022-12-05 11:25:12,129] [django.request] [log] [Process:234857] [Thread:140300265174912] Not Found: /sso/statiffiles/css/bootstrap.min.css
+WARNING [2022-12-05 11:25:28,839] [django.request] [log] [Process:234355] [Thread:140300265174912] Not Found: /sso/staticfiles/css/bootstrap.min.css
+WARNING [2022-12-05 17:31:31,158] [django.request] [log] [Process:237211] [Thread:140657309071232] Not Found: /sso/static
